@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Les fromage de seine et Marne</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<!-- header -->
+<header>
+  <div class="fluid-container avertissement">
+    <div class="row">
+      <div class="col">
+        <h1>Site réalisé dans le cadre d'une semaine intensive à HETIC, tous les contenus et l'existence même de ce site ne participe qu'à une fiction. Toutes ressemblances avec une situation réelle ne serait que fortuite.</h1>
+      </div>
+    </div>
+  </div>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand" href="index.html"><img src="assets/img/logo_brie.png" alt="logo" style="height:120px;">
+        </a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav float-right ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="produits.html">Produits</a></li>
+                    <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="#">Recettes</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Animations fromagères</a></li> -->
+                </ul>
+        </div>
+        </div>
+    </nav>
+</header>
+<body>
+  <!-- titre -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Les fromage de seine et Marne</h1>
+    </div>
+  </div>
+</div>
+
+<!-- grid -->
+<div class="container">
+  <div class="row">
+<!-- brie de meaux -->
+    <div class="col-4">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/brieDeMeaux.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title">Brie de Meaux</h2>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailsBrieDeMeaux">
+            <ion-icon name="information-circle-outline"></ion-icon> Voir les details
+          </button>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#recetteBrieDeMeaux">
+            <ion-icon name="book"></ion-icon> Recette
+          </button>
+        </div>
+      </div>
+    </div>
+<!-- brie de melun -->
+    <div class="col-4">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/brieDeMelun.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title">Brie de Melun</h2>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailsBrieDeMelun">
+            <ion-icon name="information-circle-outline"></ion-icon> Voir les details
+          </button>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#recetteBrieDeMelun">
+            <ion-icon name="book"></ion-icon> Recette
+          </button>
+        </div>
+      </div>
+    </div>
+<!-- brie de Montereau -->
+    <div class="col-4">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/brieDeMontereau.png" alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title">Brie de Montereau</h2>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailsBrieDeMontereau">
+            <ion-icon name="information-circle-outline"></ion-icon> Voir les details
+          </button>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#recetteBrieDeMontereau">
+            <ion-icon name="book"></ion-icon> Recette
+          </button>
+        </div>
+      </div>
+    </div>
+<!-- brie de Nangis -->
+    <div class="col-4">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/brieDeNangis.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title">Brie de Nangis</h2>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailsBrieDeNangis">
+            <ion-icon name="information-circle-outline"></ion-icon> Voir les details
+          </button>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#recetteBrieDeNangis">
+            <ion-icon name="book"></ion-icon> Recette
+          </button>
+        </div>
+      </div>
+    </div>
+<!-- brie de Coulommiers (Brie petit moule) -->
+    <div class="col-4">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/Coulommiers.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title">Coulommiers</h2>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailsCoulommier">
+            <ion-icon name="information-circle-outline"></ion-icon> Voir les details
+          </button>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#recetteCoulommiers2">
+            <ion-icon name="book"></ion-icon> Recette
+          </button>
+        </div>
+      </div>
+    </div>
+<!-- brie de Gratte Paille -->
+    <div class="col-4">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/grattePaille.png" alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title">Gratte Paille</h2>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailsGrattePaille">
+            <ion-icon name="information-circle-outline"></ion-icon> Voir les details
+          </button>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#recetteGrattePaille">
+            <ion-icon name="book"></ion-icon> Recette
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- details brie de Meaux -->
+<div class="modal fade bd-example-modal-lg" id="detailsBrieDeMeaux" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Brie de Meaux</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/brieDeMeaux.jpg');height:350px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2><img src="assets/icon-agriculture/png/031-cheese.png" alt="fromaget" class="userIcon">Description</h2>
+              <h3>Dénomination :</h3>
+              <p>Fromage au lait cru de vache</p>
+              <h3>Famille :</h3>
+              <p>Pâte molle à croûte fleurie</p>
+              <h3>Appellation : </h3>
+              <p>AOP et AOC</p>
+              <h3>Conservation :</h3>
+              <p>Autour de 8°C</p>
+              <h3>Accords vins :</h3>
+              <p>s’accompagne de vins rouges fruités, comme un St-Estèphe, un côte de Beaune ou un Beaujolais.</p>
+              <h2><img src="assets/icon-agriculture/png/032-milk.png" alt="Bouteille de lait" class="userIcon">Constitution</h2>
+              <h3>Ingrédients :</h3>
+              <p>Lait cru de vache, crème, ferments lactiques, présure, sel</p>
+              <h3>Allergène :</h3>
+              <p>Lait</p>
+              <h3>Matières Grasses :</h3>
+              <p>28%</p>
+            </div>
+            <div class="col-6">
+              <h2><img src="assets/icon-agriculture/png/028-cow.png" alt="vache" class="userIcon">Voyage Sensoriel</h2>
+              <h3>Oeil :</h3>
+              <p>croûte parsemée de pigments rougeâtres et duveté de blanc. Pâte jaune paille</p>
+              <h3>Nez : </h3>
+              <p>Bouquet développé</p>
+              <h3>Goût :</h3>
+              <p>fine saveur de noisette</p>
+              <h3>Toucher :</h3>
+              <p>consistance onctueuse et bien souple mais non coulante</p>
+              <h2><img src="assets/icon-agriculture/png/042-tractor.png" alt="vache" class="userIcon">Producteur / Affineur</h2>
+              <h3>Nom :</h3>
+              <p>L'abbaye Notre-Dame-de-Jouarre</p>
+              <h3>Adresse :</h3>
+              <p>6 Rue de Montmorin, 77640 Jouarre</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- details brie de Melun -->
+<div class="modal fade bd-example-modal-lg" id="detailsBrieDeMelun" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Brie de Melun</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/brieDeMelun.jpg');height:350px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2><img src="assets/icon-agriculture/png/031-cheese.png" alt="fromaget" class="userIcon">Description</h2>
+              <h3>Dénomination :</h3>
+              <p>Fromage au lait cru de vache</p>
+              <h3>Famille :</h3>
+              <p>Pâte molle à croûte fleurie</p>
+              <h3>Appellation : </h3>
+              <p>AOP</p>
+              <h3>Conservation :</h3>
+              <p>Autour de 8°C</p>
+              <h3>Accords vins :</h3>
+              <p>S’accompagne de vin rouge type Gaillac, Bourgogne, Côtes du Rhône ou encore St-Nicolas-de-Bourgueil ou une bière (rousse ou ambrée).</p>
+              <h2><img src="assets/icon-agriculture/png/032-milk.png" alt="Bouteille de lait" class="userIcon">Constitution</h2>
+              <h3>Ingrédients :</h3>
+              <p>Lait cru de vache, crème, ferments lactiques, présure, sel</p>
+              <h3>Allergène :</h3>
+              <p>Lait</p>
+              <h3>Matières Grasses :</h3>
+              <p>22%</p>
+            </div>
+            <div class="col-6">
+              <h2><img src="assets/icon-agriculture/png/028-cow.png" alt="vache" class="userIcon">Voyage Sensoriel</h2>
+              <h3>Oeil :</h3>
+              <p>Croûte duveté de blanc. Pâte jaune </p>
+              <h3>Nez : </h3>
+              <p>Equilibré entre animal et végétal</p>
+              <h3>Goût :</h3>
+              <p>Plus fort qu’un Brie de Meaux en odeur comme en saveur avec une pointe d’amertume légèrement salée.</p>
+              <h3>Toucher :</h3>
+              <p>Pâte souvent très crémeuse et souple.</p>
+              <h2><img src="assets/icon-agriculture/png/042-tractor.png" alt="vache" class="userIcon">Producteur / Affineur</h2>
+              <h3>Nom :</h3>
+              <p>Fromagerie du Dolloir</p>
+              <h3>Adresse :</h3>
+              <p>Chézy-sur-Marne</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- details brie de Montereau -->
+<div class="modal fade bd-example-modal-lg" id="detailsBrieDeMontereau" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Brie de Montereau (Brie de Ville-Saint-Jacques)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/brieDeMontereau.png');height:350px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2><img src="assets/icon-agriculture/png/031-cheese.png" alt="fromaget" class="userIcon">Description</h2>
+              <h3>Dénomination :</h3>
+              <p>Fromage au lait cru de vache</p>
+              <h3>Famille :</h3>
+              <p>Pâte molle à croûte fleurie</p>
+              <h3>Conservation :</h3>
+              <p>Autour de 8°C</p>
+              <h3>Accords vins :</h3>
+              <p>S’accompagne d’un verre de vin rouge sec</p>
+              <h2><img src="assets/icon-agriculture/png/032-milk.png" alt="Bouteille de lait" class="userIcon">Constitution</h2>
+              <h3>Ingrédients :</h3>
+              <p>Lait cru de vache, crème, ferments lactiques, présure, sel</p>
+              <h3>Allergène :</h3>
+              <p>Lait</p>
+              <h3>Matières Grasses :</h3>
+              <p>45%</p>
+            </div>
+            <div class="col-6">
+              <h2><img src="assets/icon-agriculture/png/042-tractor.png" alt="vache" class="userIcon">Producteur / Affineur</h2>
+              <h3>Nom :</h3>
+              <p>Fromagerie du Dolloir</p>
+              <h3>Adresse :</h3>
+              <p>Ville-Saint-Jacques</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- details brie de Nangis -->
+<div class="modal fade bd-example-modal-lg" id="detailsBrieDeNangis" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Brie de Nangis</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/brieDeNangis.jpg');height:350px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2><img src="assets/icon-agriculture/png/031-cheese.png" alt="fromaget" class="userIcon">Description</h2>
+              <h3>Dénomination :</h3>
+              <p>Fromage au lait cru de vache</p>
+              <h3>Famille :</h3>
+              <p>Pâte molle à croûte fleurie</p>
+              <h3>Conservation :</h3>
+              <p>Autour de 8°C</p>
+              <h3>Accords vins :</h3>
+              <p>Se déguste avec un Sancerre ou un Mâcon blanc</p>
+              <h2><img src="assets/icon-agriculture/png/032-milk.png" alt="Bouteille de lait" class="userIcon">Constitution</h2>
+              <h3>Ingrédients :</h3>
+              <p>Lait cru de vache, crème, ferments lactiques, présure, sel</p>
+              <h3>Allergène :</h3>
+              <p>Lait</p>
+              <h3>Matières Grasses :</h3>
+              <p>20%</p>
+            </div>
+            <div class="col-6">
+              <h2><img src="assets/icon-agriculture/png/028-cow.png" alt="vache" class="userIcon">Voyage Sensoriel</h2>
+              <h3>Oeil :</h3>
+              <p>Croûte duveté de blanc. Pâte jaune </p>
+              <h3>Nez : </h3>
+              <p>Odeur de champignon</p>
+              <h3>Goût :</h3>
+              <p>Doux et fondant en bouche</p>
+              <h3>Toucher :</h3>
+              <p>Consistance onctueuse et bien souple.</p>
+              <h2><img src="assets/icon-agriculture/png/042-tractor.png" alt="vache" class="userIcon">Producteur / Affineur</h2>
+              <h3>Nom :</h3>
+              <p>Laiterie Rouzaire</p>
+              <h3>Adresse :</h3>
+              <p>Tournan-en-Brie</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- details Coulommier -->
+<div class="modal fade bd-example-modal-lg" id="detailsCoulommier" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Coulommiers (Brie petit moulé)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/Coulommiers.jpg');height:350px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2><img src="assets/icon-agriculture/png/031-cheese.png" alt="fromaget" class="userIcon">Description</h2>
+              <h3>Dénomination :</h3>
+              <p>Fromage au lait cru de vache</p>
+              <h3>Famille :</h3>
+              <p>Pâte molle à croûte fleurie</p>
+              <h3>Conservation :</h3>
+              <p>Autour de 8°C</p>
+              <h3>Accords vins :</h3>
+              <p>S’accompagne de vins rouges légers ou d’un vin blanc sec type petit Chablis ou encore de Champagne.</p>
+              <h2><img src="assets/icon-agriculture/png/032-milk.png" alt="Bouteille de lait" class="userIcon">Constitution</h2>
+              <h3>Ingrédients :</h3>
+              <p>Lait cru de vache, crème, ferments lactiques, présure, sel</p>
+              <h3>Allergène :</h3>
+              <p>Lait</p>
+              <h3>Matières Grasses :</h3>
+              <p>25%</p>
+            </div>
+            <div class="col-6">
+              <h2><img src="assets/icon-agriculture/png/028-cow.png" alt="vache" class="userIcon">Voyage Sensoriel</h2>
+              <h3>Oeil :</h3>
+              <p>Croûte duveté de blanc.</p>
+              <h3>Nez : </h3>
+              <p>Champignon et sous-bois</p>
+              <h3>Goût :</h3>
+              <p>Fine saveur de noisette</p>
+              <h3>Toucher :</h3>
+              <p>Consistance onctueuse et bien souple</p>
+              <h2><img src="assets/icon-agriculture/png/042-tractor.png" alt="vache" class="userIcon">Producteur / Affineur</h2>
+              <h3>Nom :</h3>
+              <p>Fromagerie du Dolloir</p>
+              <h3>Adresse :</h3>
+              <p>Chézy-sur-Marne</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- details Gratte Paille -->
+<div class="modal fade bd-example-modal-lg" id="detailsGrattePaille" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Gratte Paille</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/grattePaille.png');height:350px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2><img src="assets/icon-agriculture/png/031-cheese.png" alt="fromaget" class="userIcon">Description</h2>
+              <h3>Dénomination :</h3>
+              <p>Fromage au lait cru de vache</p>
+              <h3>Famille :</h3>
+              <p>Pâte molle à croûte fleurie</p>
+              <h3>Conservation :</h3>
+              <p>Autour de 8°C</p>
+              <h3>Accords vins :</h3>
+              <p>S’accompagne d’un crémant de Bourgogne ou un champagne</p>
+              <h2><img src="assets/icon-agriculture/png/032-milk.png" alt="Bouteille de lait" class="userIcon">Constitution</h2>
+              <h3>Ingrédients :</h3>
+              <p>Lait cru de vache, crème, ferments lactiques, présure, sel</p>
+              <h3>Allergène :</h3>
+              <p>Lait</p>
+              <h3>Matières Grasses :</h3>
+              <p>45%</p>
+            </div>
+            <div class="col-6">
+              <h2><img src="assets/icon-agriculture/png/042-tractor.png" alt="vache" class="userIcon">Producteur / Affineur</h2>
+              <h3>Nom :</h3>
+              <p>Fromagerie Rouzaire</p>
+              <h3>Adresse :</h3>
+              <p>77220 Tournan-en-Brie</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- recette brie De Meaux-->
+<div class="modal fade bd-example-modal-lg" id="recetteBrieDeMeaux" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Recette Brie de Meaux</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/recetteBrieDeMeaux.jpg');height:350px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>Tartine de Brie de Meaux AOP, Bacon et framboises</h1>
+              <h2>Ingrédients</h2>
+              <p>
+              350g de Brie de Meaux AOP André Collet<br>
+              1 pain de campagne<br>
+              150g de framboises<br>
+              4 fines tranches de bacon<br>
+              1 bouquet de basilic<br>
+              Préchauffez le grill du four.<br>
+              <h2>Préparation</h2>
+              Faites dorer les tranches de bacon dans une poêle bien chaude jusqu’à ce qu’il croustille. Réservez sur du papier absorbant.<br>
+              Coupez le pain en tranches et faites-les toaster très légèrement. Arrosez d’un filet d’huile d’olive et déposez des tranches généreuses de brie. Passez de nouveau les tartines sous le grill du four jusqu’à ce que le fromage soit à peine fondu.<br>
+              Parsemez vos tartines de framboises fraiches, de basilic ciselé, de bacon grillé finement émincé et terminez par un tour de moulin à poivre.<br>
+              Dégustez sans plus attendre !
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- recette brie de Melun-->
+<div class="modal fade bd-example-modal-lg" id="recetteBrieDeMelun" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Recette Brie de Melun</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/recetteBrieDeMelun.png');height:350px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>Bricks de poulet au curry et Brie de Melun</h1>
+              <h2>Ingrédients pour 4 personnes</h2>
+              <p>
+              2 blancs de poulet<br>
+              200 gr de "Bouquet di Funghi" ou champignons mélangés<br>
+              2 carottes<br>
+              1 échalote<br>
+              4 feuilles de brick<br>
+              1 cc de curry de Madras<br>
+              1 cs de ciboulette ciselée<br>
+              1 cs de persil ciselé<br>
+              1 morceau de Brie de Melun<br>
+              Huile d'olive extra vierge<br>
+              Sel de Guérande<br>
+              Poivre du moulin aux 5 baies<br>
+              <br>
+              <h2>Préparation</h2>
+              Découpez vos blancs de poulet en petits morceaux que vous faites revenir dans une poêle avec un peu d'huile d'olive. Salez, poivrez et ajoutez le curry.<br>
+              Epluchez, lavez et râpez vos carottes que vous faites blanchir 3 min dans de l'eau bouillante.<br>
+              <br>
+              Epluchez, ciselez votre échalote que vous faites revenir dans une poêle avec un peu d'huile d'olive.<br>
+              Ajoutez au poulet, le râpé de carottes, l'échalote, le persil et la ciboulette. Rectifiez l'assaisonnement.<br>
+              <br>
+              Etalez vos 4 feuilles de brick sur un plan de travail et répartir la préparation sur le dessus.<br>
+              Ajoutez quelques lamelles de fromage et fermez vos bricks en les roulant sur elle-mêmes.<br>
+              Badigeonnez le dessus avec un peu d'huile d'olive et enfournez dans un four chaud à 180°C pendant 30 min, chaleur tournante.<br>
+              <br>
+              Surveillez la cuisson, elle peut-être plus ou moins longue en fonction de votre four.<br>
+              Servir aussitôt.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- recette brie de Montereau-->
+<div class="modal fade bd-example-modal-lg" id="recetteBrieDeMontereau" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Recette Brie de Montereau</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/recetteBrieDeMontereau.jpg');height:350px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>Croque-monsieur fromage épinards</h1>
+              <h2>Ingrédients</h2>
+              <p>
+              8 tranches de pain de mie complet<br>
+              300 g d'épinards frais<br>
+              30 g de beurre<br>
+              1 Brie de montereau<br>
+              sel<br>
+              poivre<br>
+              <br>
+              <h2>Préparation</h2>
+              Préchauffer le four à 180°C (th.6).<br>
+              Laver soigneusement et égoutter les épinards.<br>
+              Dans une poêle, faire fondre le beurre, y faire tomber les épinards quelques minutes. Assaisonner et retirer du feu.<br>
+              Déposer les tranches de pain de mie sur le plan de travail. Les tailler en triangles. Sur la moitié de ces tranches et à l’aide d’une fourchette, répartir lesépinards. Déposer un gros morceau de fromage frais. Couvrir avec les autres tranches de pain de mie. A l’aide d’un pinceau, badigeonner leur surface de beurre fondu.<br>
+              Déposer les croques sur une plaque du four, enfourner et cuire jusqu’ils soient légèrement colorés (ou les placer dans un appareil à croques monsieurs).<br>
+              Servir et déguster chaud !<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- recette Brie de Nangis-->
+<div class="modal fade bd-example-modal-lg" id="recetteBrieDeNangis" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Recette Brie de Nangis</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/recetteBriedeNangi.jpg');height:350px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>Toasts au brie et à la grenade séchée</h1>
+              <h2>Ingrédients</h2>
+              <p>
+                4 rondelles de baguette aux céréales<br>
+                40 g de brie tranché en 4<br>
+                1 c. à s. d'huile d'olive<br>
+                1 c. à s. de vinaigre balsamique<br>
+                1 c. à c. de sirop d'agave<br>
+                1 c. à s. de graines de grenade séchées<br>
+                1 c. à s. de ciboulette ciselée<br>
+                1 noix de beurre<br>
+                Sel, poivre<br>
+                <br>
+                <h2>Préparation</h2>
+                Préchauffez le four à 180°C.<br>
+                Coupez la baguette en 4  rondelles. Tartinez les rondelles avec le beurre.<br>
+                Déposez le fromage sur chaque rondelle.<br>
+                Mettez les toasts à cuire 5 à 10 minutes, jusqu’à ce que le fromage soit fondu.<br>
+                Pendant ce temps, mélangez l'huile, le vinaigre, le sirop d'agave, le sel, le poivre dans un bol.<br>
+                Quand le fromage est fondu, sortez les toasts du four Saupoudrez-les de graines de grenade séchées, de ciboulette ciselée, de vinaigrette, et remettez un tour de moulin à poivre.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- recette Coulommiers-->
+<div class="modal fade bd-example-modal-lg" id="recetteCoulommiers" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Recette Coulommiers</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/recetteCoulommiers.png');height:350px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>Pour 2 cocottes</h2>
+              <p>
+              2 œufs<br>
+              10 cl de crème liquide entière<br>
+              1 c. à s. de ciboulette ciselée<br>
+              100 g de coulommiers<br>
+              1 c. à s. de cranberries<br>
+              Sel, poivre<br>
+              Salez et poivrez le fond des ramequins.<br>
+              Versez la crème, la ciboulette, le coulommiers coupé en petits dés, l’œuf et saupoudrez des cranberries pour décorer.<br>
+              Préchauffez le four à 180°C. Remplissez un plat allant au four avec de l’eau bouillante et disposez les ramequins.<br>
+              Enfournez pour environ 8 à 10 minutes jusqu’à ce que le blanc soit pris
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- recette Coulommiers 2-->
+<div class="modal fade bd-example-modal-lg" id="recetteCoulommiers2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Recette Coulommier</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/recetteCoulommiers.png');height:350px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>Brie fondant aux tomates séchées et au basilic</h1>
+              <h2>Ingrédients pour 6 portions</h2>
+              <p>
+                1 petite meule de brie de 300 g<br>
+                1 c. à soupe d’huile d’olive<br>
+                1 grosse gousse d’ail, hachée finement<br>
+                125 ml (1/2 tasse) de tomates séchées dans l’huile, hachées finement<br>
+                60 ml (1/4 tasse) de vinaigre balsamique blanc* ou vinaigre balsamique<br>
+                3 c. à soupe de basilic frais, haché<br>
+                <br>
+                <h2>Préparation</h2>
+                Placer la grille dans le tiers inférieur du four. Préchauffer le four à 190 °C (375 °F).<br>
+                À l’aide d’un couteau dentelé, enlever la croûte supérieure du brie (ne retirer qu’une fine tranche) et la jeter. Déposer le brie dans un moule à tarte ou un moule à brie. Cuire au four jusqu’à ce que le fromage ramollisse, environ 10 minutes.<br>
+                Sur feu moyen-vif, chauffer une petite casserole. Verser l’huile d’olive, ajouter l’ail, les tomates séchées et le vinaigre balsamique et laisser réduire jusqu’à ce que la préparation ait la consistance d’un sirop, environ 5 minutes. En arroser le brie et parsemer de basilic. Servir avec des craquelins.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- recette Gratte Paille -->
+<div class="modal fade bd-example-modal-lg" id="recetteGrattePaille" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Recette Gratte Paille</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" style="background-image:url('assets/img/recetteGrattePaille.jpg');height:350px;background-position: center;background-repeat: no-repeat; background-size: cover;">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>Samoussas fromage-chocolat à la marocaine</h1>
+              <h2>Ingrédients</h2>
+              <p>
+              Pour les samoussas<br>
+              1 paquet de feuilles de bricks<br>
+              180g de Gratte Paille<br>
+              20g d’amandes effilées<br>
+              3 cuillères à soupe de miel liquide<br>
+              2g de cannelle<br>
+              20g de chocolat noir 70% concassé<br>
+              3 pruneaux<br>
+              2 à 3 cuillères à soupe de vinaigre de cidre<br>
+              Beurre clarifié<br>
+              <br>
+              Pour la purée de patate douce rôtie<br>
+              600g patates douces<br>
+              Sel, poivre<br>
+              Un peu de crème ou d’huile d’olive si nécessaire pour l’assouplir<br>
+              <br>
+              <h2>Préparation</h2>
+              Préchauffez le four à 180°C.<br>
+              Faire rôtir les patates douces au four, emballées dans un papier aluminium, une 40aine de minutes. Lorsqu’elles sont tendres, écrasez-les à la fourchette en rajoutant un peu de sel et poivre afin d’obtenir votre purée maison (si nécessaire, versez un peu de crème pour assouplir la texture).<br>
+              Préparez le condiment en mélangeant dans un bol les amandes effilées avec le miel, la cannelle, les pruneaux émincés finement, le chocolat et le vinaigre de cidre. Bien mélanger pour avoir une consistance de pâte grossière.<br>
+              Coupez le fromage en petits rectangles. Coupez chaque feuille de brick en deux.<br>
+              Posez une demie feuille de brick sur votre plan de travail, repliez la partie bombée sur le bas pour obtenir un rectangle de pâte (cf. photo). Disposez un rectangle de fromage à une des extrémités, une petite cuillère de condiment au chocolat, et recouvrez d’un second rectangle de fromage. Pliez la feuille de brick pour former vos samoussas.<br>
+              Beurrez les samoussas avec le beurre clarifié et passez au four environ 15 minutes, en les retournant à mi-cuisson. Attention de ne pas trop les cuire pour que le fromage ne finisse pas par s’échapper.<br>
+              Juste avant de servir, saupoudrez les samoussas de sucre glace. Sur vos assiettes, disposez une cuillère de purée, ajoutez quelques pousses de salades et dressez 2 à 3 samoussas sur le dessus pour une belle entrée!<br>
+              VERSION EXPRESSE<br>
+              Au lieu de faire vous-même la purée de patates douces, ils en font une excellente chez Picard pour moins de 2€… pourquoi s’en priver! Ajoutez un filet de réduction balsamique pour le décor et ce sera parfait.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+
+</body>
+<footer>
+  <div class="fluid-container avertissement">
+    <div class="row">
+      <div class="col">
+        <h1>Site réalisé dans le cadre d'une semaine intensive à HETIC, tous les contenus et l'existence même de ce site ne participe qu'à une fiction. Toutes ressemblances avec une situation réelle ne serait que fortuite.</h1>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

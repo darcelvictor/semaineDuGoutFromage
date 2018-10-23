@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
+.procductBanner h1
+{
+  text-align: center;
+}
+
+h1
+{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2,h3,p
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-title
+{
+  text-align: center;
+}
+.btn-success
+{
+  float: right;
+}
+
+.userIcon
+{
+  height: 40px;
+}
+.col-4
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.avertissement
+{
+  background-color: red;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.avertissement h1
+{
+  font-size: 15px;
+}
